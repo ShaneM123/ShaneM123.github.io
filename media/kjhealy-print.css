@@ -71,7 +71,7 @@ p {
 
 code {
 	font: normal normal;
-	font-size: 80%;
+	font-size: 90%;
 	/*line-height: 1em;*/
 	font-family: Menlo,monospace,sans-serif;
 	color: #ccc;
@@ -120,7 +120,7 @@ h1,h2,h3,h4 {
 
 h1 {
 	text-align: left;
-	font-size: 4em;
+	font-size: 5em;
 	line-height: 1em;
 	position: relative;
 	left: 28%;
@@ -133,7 +133,7 @@ h1+p {
 }
 
 h2 {
-	font-size: 2.1em;
+	font-size: 3.1em;
 	color: #a00;
 	margin-top: 2em;
 	position: relative;
@@ -144,7 +144,7 @@ h2 {
 
 
 h3 {
-	font-size: 2em;
+	font-size: 3em;
 	line-height: 2em; 
 	color: #ccc;
 	position: relative;
@@ -168,7 +168,7 @@ a:hover {
 	left: 28%;
 	color: #ccc;
 	font-family: Menlo,monospace,sans-serif;
-	font-size: 80%;
+	font-size: 90%;
 }
 
 #webaddress a {
