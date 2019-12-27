@@ -6,7 +6,7 @@ title: Shane Moloney's CV
    Software Developer
 
 <div id="webaddress">
-<a href="https://github.com/ShaneM123g">Github account</a>
+<a href="https://github.com/ShaneM123">Github account</a>
 | <a href="https://www.linkedin.com/in/shanemoloney123/">LinkedIn page</a>
 </div>
 
@@ -54,7 +54,7 @@ __University Of West London, UK__
 ## Projects
 
 Developed the User Experience for a Puzzle game as part mobile UI module at University
-Link: https://drive.google.com/file/d/1Kf1-mlamz_GfxEuS1hwc0P9PW0n_PC4f/view
+Link: <a href="https://drive.google.com/file/d/1Kf1-mlamz_GfxEuS1hwc0P9PW0n_PC4f/view">UI experience Video</a> 
 
 <!-- A list is  available on my GitHub [online](https://github.com/ShaneM123) -->
 
@@ -63,7 +63,7 @@ Link: https://drive.google.com/file/d/1Kf1-mlamz_GfxEuS1hwc0P9PW0n_PC4f/view
 ## Occupation
 
 `Present`
-__General Motors - Software Developer__, London
+__General Motors - Software Developer__, __Ireland__
 
 - Mainframe Applications
 - Developing COBOL or PL/1 Code and  writting SQL statements to improve and upgrade General Motors Mainframe system.
