@@ -13,7 +13,7 @@ title: Shane Moloney's CV
 
 ## Current Position
 
-General Motors - Software Developer Apprentice
+General Motors - Software Developer
 
 ### Specialized IT Skills
 
