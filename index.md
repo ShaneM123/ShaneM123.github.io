@@ -54,7 +54,7 @@ __University Of West London, UK__
 ## Projects
 
 Currently building a inventory management website using rust: <a href="https://github.com/ShaneM123/hism-server-v2">HISM</a> 
-I create coding Tutorials: <a href="https://www.youtube.com/watch?v=f8HE7b7_2V0">Youtube</a>
+<p>I create coding Tutorials: <a href="https://www.youtube.com/watch?v=f8HE7b7_2V0">Youtube</a></p>
 
 <!-- A list is  available on my GitHub [online](https://github.com/ShaneM123) -->
 
