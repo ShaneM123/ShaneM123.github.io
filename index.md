@@ -53,8 +53,8 @@ __University Of West London, UK__
 
 ## Projects
 
-Developed the User Experience for a Puzzle game as part mobile UI module at University
-Link: <a href="https://drive.google.com/file/d/1Kf1-mlamz_GfxEuS1hwc0P9PW0n_PC4f/view">UI experience Video</a> 
+Currently building a inventory management website using rust: <a href="https://github.com/ShaneM123/hism-server-v2">HISM/a> 
+I create coding Tutorials: <a href="https://www.youtube.com/watch?v=f8HE7b7_2V0">Youtube/a> 
 
 <!-- A list is  available on my GitHub [online](https://github.com/ShaneM123) -->
 
