@@ -21,7 +21,7 @@ General Motors - Software Developer
 
 ### Further IT Skills
 
-Rust Programming language, Java, Git, Agile, TFS, Docker, Mainframe Applications
+Rust, Git, Agile, TFS, Docker, Mainframe Applications
 
 ### Other Skills
 
