@@ -13,15 +13,15 @@ title: Shane Moloney's CV
 
 ## Current Position
 
+Gridlock - CTO
+
+## Previous Position
+
 General Motors - Software Developer
 
 ### Specialized IT Skills
 
- Cobol, PL/1, JCL, CA-7, Endevour, DB2, IMS, SQL, Linux
-
-### Further IT Skills
-
-Rust, Git, Agile, TFS, Docker, Mainframe Applications
+ Rust, Git, Agile, Docker Cobol, SQL, Linux PL/1, JCL, DB2, IMS,
 
 ### Other Skills
 
@@ -63,6 +63,13 @@ Currently building a inventory management website using rust: <a href="https://g
 ## Occupation
 
 `Present`
+__Gridlock - CTO__, __Remote__
+
+- Decentralised Crpytocurrency Wallet
+- writting backend rust code and system architecutre
+- Team Lead
+
+`2019-2020`
 __General Motors - Software Developer__, __Ireland__
 
 - Mainframe Applications
@@ -76,6 +83,6 @@ __Berlitz - English Teacher __, Germany
 
 <!-- ### Footer
 
-Last updated: Dec 2019 -->
+Last updated: Jul 2020 -->
 
 
