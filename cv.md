@@ -1,6 +1,9 @@
 ---
 layout: cv
 title: CV - Shane Moloney
+permalink: /cv/
+redirect_from:
+  - /
 ---
 
 # Shane Moloney
