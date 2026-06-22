@@ -6,14 +6,14 @@ permalink: /cv/
 
 # Shane Moloney
 
-**Full Stack Engineer**
+**Full Stack Engineer & Founder**
 
 <div id="webaddress">
 <a href="https://github.com/ShaneM123">GitHub</a> | 
 <a href="https://www.linkedin.com/in/shanemoloney123/">LinkedIn</a>
 </div>
 
-**Location:** Europe (Hybrid)
+**Location:** Germany (Hybrid)
 
 ## About
 I build things and play music. Full Stack Engineer and Founder with deep expertise in Rust, IoT/OT cybersecurity, and modern web development. Experienced in leading teams, shipping production systems, and bridging technical and business needs.
@@ -102,7 +102,7 @@ Rust, Full Stack Development, IoT/OT Cybersecurity, Threat Detection, Anomaly De
 Team Leadership, Hiring, Agile/SCRUM Methodologies, Strategic Planning, Client Engagement, Cross-functional Collaboration, Remote Team Workflows
 
 **Languages**  
-German (Fluent), Italian (Fluent)
+English (Native), German
 
 ## Education
 
@@ -141,4 +141,6 @@ Created coding tutorials and technical guides on modern technologies with 10,000
 
 Responsive website deployed with Cloudflare hosting. Digitisation and publishing of archival audio content for public access.
 
-*Back to [Home](/)* • [Portfolio](/portfolio/)*
+---
+
+**Quick links:** [Home](/), [Portfolio](/portfolio/)

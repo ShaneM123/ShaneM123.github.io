@@ -4,57 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <title>{% if page.title %}{{ page.title }} | {% endif %} Shane Moloney</title>
-  <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
-  <style>
-    .site-nav {
-      background: #f8f9fa;
-      border-bottom: 1px solid #e9ecef;
-      padding: 12px 20px;
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .site-nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: background 0.2s ease;
-    }
-
-    .site-nav a:hover {
-      background: #e9ecef;
-    }
-
-    .site-nav .brand {
-      font-weight: 700;
-      font-size: 1.1em;
-      margin-right: auto;
-    }
-
-    @media print {
-      .site-nav {
-        display: none;
-      }
-    }
-  </style>
+  <link href="../media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="../media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
 </head>
 
 <body>
   <div id="main">
-    <!-- Navigation between Home / CV / Portfolio leaves -->
-    <nav class="site-nav">
-      <a href="/" class="brand">Shane Moloney</a>
-      <a href="/">Home</a>
-      <a href="/cv/">CV</a>
-      <a href="/portfolio/">Portfolio</a>
-    </nav>
-
     <div id="content">
       {{ content }}
     </div>

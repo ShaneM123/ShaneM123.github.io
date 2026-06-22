@@ -15,3 +15,6 @@ title: Blog
 {% endfor %}
 
 *No posts yet — add files in the `_posts/` folder to get started.*
+
+**Pages:** [Home](/), [CV](/cv/), [Portfolio](/portfolio/)
+
