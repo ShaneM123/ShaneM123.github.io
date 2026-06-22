@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: cv
 title: Blog
+permalink: /blog/
 ---
+
 
 # Blog
 
@@ -14,7 +16,5 @@ title: Blog
 ---
 {% endfor %}
 
-*No posts yet — add files in the `_posts/` folder to get started.*
-
-**Pages:** [Home](/), [CV](/cv/), [Portfolio](/portfolio/)
+*No posts yet —*
 

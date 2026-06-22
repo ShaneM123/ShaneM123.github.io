@@ -3,17 +3,230 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %} Shane Moloney</title>
   <link href="../media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="../media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+  <style>
+    #page {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    #sidebar {
+      width: 220px;
+      flex-shrink: 0;
+      background: #f8f9fa;
+      border-right: 1px solid #e5e5e5;
+      padding: 24px 18px;
+      box-sizing: border-box;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    #sidebar .sidebar-header {
+      margin-bottom: 24px;
+    }
+
+    #sidebar .sidebar-header h1 {
+      font-size: 1.25rem;
+      margin: 0 0 4px 0;
+      color: #111;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    #sidebar .sidebar-header p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    #sidebar nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+    }
+
+    #sidebar nav li {
+      margin-bottom: 3px;
+    }
+
+    #sidebar nav a {
+      display: contents;
+      padding: 8px 12px;
+      padding-left: 15px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+    }
+
+    #sidebar nav a:hover {
+      background-color: #f0f0f0;
+      border-left-color: #ccc;
+    }
+
+    #sidebar nav a.active {
+      background-color: #e8f0fe;
+      color: #0066cc;
+      border-left-color: #0066cc;
+      font-weight: 600;
+    }
+
+    #sidebar .sidebar-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    #sidebar .sidebar-footer a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    #sidebar .sidebar-footer a:hover {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    #main {
+      flex: 1;
+      min-width: 0;
+      padding: 0;
+    }
+
+
+    .project {
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      color: #111;
+      font-weight: 600;
+    }
+
+    .project p {
+      margin: 0.35rem 0 0.6rem 0;
+      line-height: 1.55;
+    }
+
+    .project strong {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .project details {
+      margin-top: 0.5rem;
+    }
+
+    .project summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #0066cc;
+      user-select: none;
+      padding: 3px 0;
+      transition: color 0.1s ease;
+    }
+
+    .project summary:hover {
+      color: #004999;
+    }
+
+    .project details[open] summary {
+      margin-bottom: 0.55rem;
+    }
+
+    .project ul {
+      margin: 0.35rem 0 0 1.15rem;
+      padding-left: 0.1rem;
+    }
+
+    .project li {
+      margin-bottom: 0.25rem;
+      line-height: 1.5;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      #page {
+        flex-direction: column;
+      }
+
+      #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 16px 18px;
+      }
+    }
+
+    @media print {
+      #sidebar {
+        display: none !important;
+      }
+
+      #page {
+        display: flex;
+      }
+
+      #main {
+        flex: none;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="main">
-    <div id="content">
-      {{ content }}
+  <div id="page">
+    <div id="sidebar">
+      {% include sidebar.html %}
+    </div>
+
+    <div id="main">
+      <div id="content">
+        {{ content }}
+      </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var links = document.querySelectorAll('#sidebar nav a');
+      var path = window.location.pathname.replace(/\/$/, '') || '/';
+
+      links.forEach(function (link) {
+        var href = link.getAttribute('href').replace(/\/$/, '') || '/';
+        if (href === path) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>

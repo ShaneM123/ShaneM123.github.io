@@ -2,32 +2,24 @@
 layout: cv
 title: CV - Shane Moloney
 permalink: /cv/
+redirect_from:
+  - /
 ---
 
 # Shane Moloney
 
-**Full Stack Engineer & Founder**
+**Software Developer**
 
 <div id="webaddress">
 <a href="https://github.com/ShaneM123">GitHub</a> | 
 <a href="https://www.linkedin.com/in/shanemoloney123/">LinkedIn</a>
 </div>
 
-**Location:** Germany (Hybrid)
-
-## About
-I build things and play music. Full Stack Engineer and Founder with deep expertise in Rust, IoT/OT cybersecurity, and modern web development. Experienced in leading teams, shipping production systems, and bridging technical and business needs.
+**Location:** EU
 
 ## Experience
 
-### Full Stack Engineer
-**My Founder Mode Software Services** · Full-time  
-Mar 2025 – Present · 1 yr 4 mos · Germany · Hybrid
-
-Fullstack development and community driven projects.  
-Infrastructure, Artificial Intelligence (AI) and additional skills.
-
-### Software Developer
+### Full Stack Developer
 **Rhebo** · Full-time  
 Oct 2021 – Jan 2025 · 3 yrs 4 mos · Germany
 
@@ -40,9 +32,10 @@ Oct 2021 – Jan 2025 · 3 yrs 4 mos · Germany
 - Introduced remote tooling and collaboration workflows for a distributed team, accelerating on-boarding and improving productivity across a team of developers
 - Contributed to notification systems for real-time OT network monitoring and anomaly detection
 
-**Skills:** Representational State Transfer (REST), Network Security and +15 skills
 
-### CTO
+--- ✦ ---
+
+### Startup CTO
 **Gridlock**  
 Sep 2020 – Jul 2021 · 11 mos · Remote
 
@@ -69,9 +62,10 @@ Sep 2020 – Jul 2021 · 11 mos · Remote
 - Weekly releases and product iterations
 - Product promotion and iteration
 
-**Skills:** Strategy, Representational State Transfer (REST) and +7 skills
 
-### Software Engineer
+--- ✦ ---
+
+### Software Developer
 **General Motors**  
 Jul 2019 – Aug 2020 · 1 yr 2 mos · Limerick Metropolitan Area
 
@@ -85,13 +79,8 @@ Jul 2019 – Aug 2020 · 1 yr 2 mos · Limerick Metropolitan Area
 - Help design and develop quality code in a timely manner
 - Worked with a close-knit team of developers to deliver on set deadlines in a timely manner.
 
-**Skills:** Representational State Transfer (REST), Software Solutions and +1 skill
 
-### Developer
-**General Motors**  
-Jul 2019 – Aug 2020 · 1 yr 2 mos
 
-Modernized legacy systems with efficient API interoperability.
 
 ## Skills
 
@@ -103,6 +92,7 @@ Team Leadership, Hiring, Agile/SCRUM Methodologies, Strategic Planning, Client E
 
 **Languages**  
 English (Native), German
+
 
 ## Education
 
@@ -119,6 +109,7 @@ University of West London, UK — 2011–2012
 **Teaching Knowledge Test (TKT1)**  
 Cambridge University
 
+
 ## Projects
 
 ### FestivalGrade – Festival Rating Website
@@ -126,15 +117,18 @@ Cambridge University
 
 Fullstack festival rating platform with user reviews, Keycloak authentication, and content management features. Deployed on Hetzner VPS.
 
+
 ### AI Detector – Open Source AI Email Detector
 **Rust** | May 2025 – June 2025
 
 Open-source email classification tool featuring a KNN detection engine, REST API backend, and Rust Hypertext server-side frontend. Containerized with Docker and deployed on Hetzner Linux infrastructure.
 
+
 ### Technical Content Creation
 **YouTube – @shanemoloney** | May 2021 – June 2026
 
 Created coding tutorials and technical guides on modern technologies with 10,000+ views. Hosted live events with renowned developers such as Herbert Wolverson.
+
 
 ### TommyWhelan.com Website
 **Freelance** | January 2025 – March 2025
@@ -143,4 +137,3 @@ Responsive website deployed with Cloudflare hosting. Digitisation and publishing
 
 ---
 
-**Quick links:** [Home](/), [Portfolio](/portfolio/)

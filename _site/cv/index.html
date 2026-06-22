@@ -3,169 +3,392 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>CV - Shane Moloney |  Shane Moloney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Shane Moloney | Shane Moloney</title>
   <link href="../media/kjhealy-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="../media/kjhealy-print.css" type="text/css" rel="stylesheet" media="print">
+  <style>
+    #page {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    #sidebar {
+      width: 220px;
+      flex-shrink: 0;
+      background: #f8f9fa;
+      border-right: 1px solid #e5e5e5;
+      padding: 24px 18px;
+      box-sizing: border-box;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    #sidebar .sidebar-header {
+      margin-bottom: 24px;
+    }
+
+    #sidebar .sidebar-header h1 {
+      font-size: 1.25rem;
+      margin: 0 0 4px 0;
+      color: #111;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    #sidebar .sidebar-header p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    #sidebar nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+    }
+
+    #sidebar nav li {
+      margin-bottom: 3px;
+    }
+
+    #sidebar nav a {
+      display: contents;
+      padding: 8px 12px;
+      padding-left: 15px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+    }
+
+    #sidebar nav a:hover {
+      background-color: #f0f0f0;
+      border-left-color: #ccc;
+    }
+
+    #sidebar nav a.active {
+      background-color: #e8f0fe;
+      color: #0066cc;
+      border-left-color: #0066cc;
+      font-weight: 600;
+    }
+
+    #sidebar .sidebar-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    #sidebar .sidebar-footer a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    #sidebar .sidebar-footer a:hover {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    #main {
+      flex: 1;
+      min-width: 0;
+      padding: 0;
+    }
+
+    .project {
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      color: #111;
+      font-weight: 600;
+    }
+
+    .project p {
+      margin: 0.35rem 0 0.6rem 0;
+      line-height: 1.55;
+    }
+
+    .project strong {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .project details {
+      margin-top: 0.5rem;
+    }
+
+    .project summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #0066cc;
+      user-select: none;
+      padding: 3px 0;
+      transition: color 0.1s ease;
+    }
+
+    .project summary:hover {
+      color: #004999;
+    }
+
+    .project details[open] summary {
+      margin-bottom: 0.55rem;
+    }
+
+    .project ul {
+      margin: 0.35rem 0 0 1.15rem;
+      padding-left: 0.1rem;
+    }
+
+    .project li {
+      margin-bottom: 0.25rem;
+      line-height: 1.5;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      #page {
+        flex-direction: column;
+      }
+
+      #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 16px 18px;
+      }
+    }
+
+    /* Print */
+    @media print {
+      #sidebar {
+        display: none !important;
+      }
+
+      #page {
+        display: flex;
+      }
+
+      #main {
+        flex: none;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="main">
-    <div id="content">
-      <h1 id="shane-moloney">Shane Moloney</h1>
+  <div id="page">
+    <div id="sidebar">
+      <div class="sidebar-header">
+        <h1>Shane Moloney</h1>
+        <p>Software Developer</p>
+      </div>
 
-<p><strong>Full Stack Engineer &amp; Founder</strong></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/cv/">CV</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </nav>
 
-<div id="webaddress">
-<a href="https://github.com/ShaneM123">GitHub</a> | 
-<a href="https://www.linkedin.com/in/shanemoloney123/">LinkedIn</a>
-</div>
+      <div class="sidebar-footer">
+        <a href="https://github.com/ShaneM123" target="_blank" rel="noopener">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/shanemoloney123/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
 
-<p><strong>Location:</strong> Germany (Hybrid)</p>
+    <div id="main">
+      <div id="content">
+        <h1 id="shane-moloney">Shane Moloney</h1>
 
-<h2 id="about">About</h2>
-<p>I build things and play music. Full Stack Engineer and Founder with deep expertise in Rust, IoT/OT cybersecurity, and modern web development. Experienced in leading teams, shipping production systems, and bridging technical and business needs.</p>
+        <p><strong>Software Developer</strong></p>
 
-<h2 id="experience">Experience</h2>
+        <div id="webaddress">
+          <a href="https://github.com/ShaneM123">GitHub</a> |
+          <a href="https://www.linkedin.com/in/shanemoloney123/">LinkedIn</a>
+        </div>
 
-<h3 id="full-stack-engineer">Full Stack Engineer</h3>
-<p><strong>My Founder Mode Software Services</strong> · Full-time<br />
-Mar 2025 – Present · 1 yr 4 mos · Germany · Hybrid</p>
+        <p><strong>Location:</strong> EU</p>
 
-<p>Fullstack development and community driven projects.<br />
-Infrastructure, Artificial Intelligence (AI) and additional skills.</p>
+        <h2 id="experience">Experience</h2>
 
-<h3 id="software-developer">Software Developer</h3>
-<p><strong>Rhebo</strong> · Full-time<br />
-Oct 2021 – Jan 2025 · 3 yrs 4 mos · Germany</p>
+        <h3 id="full-stack-developer">Full Stack Developer</h3>
+        <p><strong>Rhebo</strong> · Full-time<br />
+          Oct 2021 – Jan 2025 · 3 yrs 4 mos · Germany</p>
 
-<ul>
-  <li>Developed Threat Detection Software for IoT and OT industries</li>
-  <li>Delivered improvements on memory and CPU utilization in resource-constrained IoT embedded systems through optimization of lightweight messaging protocols</li>
-  <li>Delivered Rust prototypes in anomaly detection, significantly improving threat visibility for industrial OT networks</li>
-  <li>Improved Rust based real-time protocol detection, serialization, and cross service notifications in low latency environments, resulting in more reliable synchronicity across distributed components</li>
-  <li>Hardened core product security by identifying and remediating critical vulnerabilities</li>
-  <li>Served as technical liaison with a multinational partner, supporting integration of the OT security platform into their IIoT environment</li>
-  <li>Introduced remote tooling and collaboration workflows for a distributed team, accelerating on-boarding and improving productivity across a team of developers</li>
-  <li>Contributed to notification systems for real-time OT network monitoring and anomaly detection</li>
-</ul>
+        <ul>
+          <li>Developed Threat Detection Software for IoT and OT industries</li>
+          <li>Delivered improvements on memory and CPU utilization in resource-constrained IoT embedded systems through
+            optimization of lightweight messaging protocols</li>
+          <li>Delivered Rust prototypes in anomaly detection, significantly improving threat visibility for industrial
+            OT networks</li>
+          <li>Improved Rust based real-time protocol detection, serialization, and cross service notifications in low
+            latency environments, resulting in more reliable synchronicity across distributed components</li>
+          <li>Hardened core product security by identifying and remediating critical vulnerabilities</li>
+          <li>Served as technical liaison with a multinational partner, supporting integration of the OT security
+            platform into their IIoT environment</li>
+          <li>Introduced remote tooling and collaboration workflows for a distributed team, accelerating on-boarding and
+            improving productivity across a team of developers</li>
+          <li>Contributed to notification systems for real-time OT network monitoring and anomaly detection</li>
+        </ul>
 
-<p><strong>Skills:</strong> Representational State Transfer (REST), Network Security and +15 skills</p>
+        <p>— ✦ —</p>
 
-<h3 id="cto">CTO</h3>
-<p><strong>Gridlock</strong><br />
-Sep 2020 – Jul 2021 · 11 mos · Remote</p>
+        <h3 id="startup-cto">Startup CTO</h3>
+        <p><strong>Gridlock</strong><br />
+          Sep 2020 – Jul 2021 · 11 mos · Remote</p>
 
-<p><strong>Achievements:</strong></p>
-<ul>
-  <li>Successful release of Gridlock’s security focused decentralized wallet</li>
-</ul>
+        <p><strong>Achievements:</strong></p>
+        <ul>
+          <li>Successful release of Gridlock’s security focused decentralized wallet</li>
+        </ul>
 
-<p><strong>How:</strong></p>
-<ul>
-  <li>Created strategic plans and company timelines</li>
-  <li>Engaged with business leaders and clients developing partnerships and leads</li>
-  <li>Engaged and supported UX/UI team to perfect the user experience</li>
-  <li>Introduced modern agile and lean development methodologies and best practices</li>
-  <li>Engaged with System Architect on creating module and system design</li>
-  <li>Led development on the core product and set task prioritization</li>
-  <li>Expanded development team</li>
-</ul>
+        <p><strong>How:</strong></p>
+        <ul>
+          <li>Created strategic plans and company timelines</li>
+          <li>Engaged with business leaders and clients developing partnerships and leads</li>
+          <li>Engaged and supported UX/UI team to perfect the user experience</li>
+          <li>Introduced modern agile and lean development methodologies and best practices</li>
+          <li>Engaged with System Architect on creating module and system design</li>
+          <li>Led development on the core product and set task prioritization</li>
+          <li>Expanded development team</li>
+        </ul>
 
-<p><strong>Day-to-day:</strong></p>
-<ul>
-  <li>Regular engagement with clients and C-level</li>
-  <li>Hiring and interviews</li>
-  <li>Product development</li>
-  <li>Task prioritization</li>
-  <li>SCRUM meetings</li>
-  <li>Feedback and 1:1 meetings with development team members</li>
-  <li>Software development (UX, Rust, DevOps)</li>
-  <li>Weekly releases and product iterations</li>
-  <li>Product promotion and iteration</li>
-</ul>
+        <p><strong>Day-to-day:</strong></p>
+        <ul>
+          <li>Regular engagement with clients and C-level</li>
+          <li>Hiring and interviews</li>
+          <li>Product development</li>
+          <li>Task prioritization</li>
+          <li>SCRUM meetings</li>
+          <li>Feedback and 1:1 meetings with development team members</li>
+          <li>Software development (UX, Rust, DevOps)</li>
+          <li>Weekly releases and product iterations</li>
+          <li>Product promotion and iteration</li>
+        </ul>
 
-<p><strong>Skills:</strong> Strategy, Representational State Transfer (REST) and +7 skills</p>
+        <p>— ✦ —</p>
 
-<h3 id="software-engineer">Software Engineer</h3>
-<p><strong>General Motors</strong><br />
-Jul 2019 – Aug 2020 · 1 yr 2 mos · Limerick Metropolitan Area</p>
+        <h3 id="software-developer">Software Developer</h3>
+        <p><strong>General Motors</strong><br />
+          Jul 2019 – Aug 2020 · 1 yr 2 mos · Limerick Metropolitan Area</p>
 
-<ul>
-  <li>Developed Mainframe Applications using PL/1, COBOL and SQL code.</li>
-  <li>Experience with APIs for sending HTTP requests between frontend and backend.</li>
-  <li>Experience with databases. Regular interaction with IMS and DB2 data.</li>
-</ul>
+        <ul>
+          <li>Developed Mainframe Applications using PL/1, COBOL and SQL code.</li>
+          <li>Experience with APIs for sending HTTP requests between frontend and backend.</li>
+          <li>Experience with databases. Regular interaction with IMS and DB2 data.</li>
+        </ul>
 
-<p><strong>Responsibilities:</strong></p>
-<ul>
-  <li>Communicate effectively with a positive and confident attitude</li>
-  <li>Participate in design and code reviews</li>
-  <li>Help design and develop quality code in a timely manner</li>
-  <li>Worked with a close-knit team of developers to deliver on set deadlines in a timely manner.</li>
-</ul>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Communicate effectively with a positive and confident attitude</li>
+          <li>Participate in design and code reviews</li>
+          <li>Help design and develop quality code in a timely manner</li>
+          <li>Worked with a close-knit team of developers to deliver on set deadlines in a timely manner.</li>
+        </ul>
 
-<p><strong>Skills:</strong> Representational State Transfer (REST), Software Solutions and +1 skill</p>
+        <h2 id="skills">Skills</h2>
 
-<h3 id="developer">Developer</h3>
-<p><strong>General Motors</strong><br />
-Jul 2019 – Aug 2020 · 1 yr 2 mos</p>
+        <p><strong>Technical</strong><br />
+          Rust, Full Stack Development, IoT/OT Cybersecurity, Threat Detection, Anomaly Detection, Embedded Systems
+          Optimization, Real-time Systems, Low-latency Networking, Protocol Development, Security Hardening, REST APIs,
+          Network Security, Infrastructure, Artificial Intelligence, COBOL, PL/1, SQL, IMS, DB2, Git, Agile, Docker,
+          DevOps, UX/UI collaboration</p>
 
-<p>Modernized legacy systems with efficient API interoperability.</p>
+        <p><strong>Leadership &amp; Other</strong><br />
+          Team Leadership, Hiring, Agile/SCRUM Methodologies, Strategic Planning, Client Engagement, Cross-functional
+          Collaboration, Remote Team Workflows</p>
 
-<h2 id="skills">Skills</h2>
+        <p><strong>Languages</strong><br />
+          English (Native), German</p>
 
-<p><strong>Technical</strong><br />
-Rust, Full Stack Development, IoT/OT Cybersecurity, Threat Detection, Anomaly Detection, Embedded Systems Optimization, Real-time Systems, Low-latency Networking, Protocol Development, Security Hardening, REST APIs, Network Security, Infrastructure, Artificial Intelligence, COBOL, PL/1, SQL, IMS, DB2, Git, Agile, Docker, DevOps, UX/UI collaboration</p>
+        <h2 id="education">Education</h2>
 
-<p><strong>Leadership &amp; Other</strong><br />
-Team Leadership, Hiring, Agile/SCRUM Methodologies, Strategic Planning, Client Engagement, Cross-functional Collaboration, Remote Team Workflows</p>
+        <p><strong>Postgraduate Diploma in Software Development</strong> (1st Class Honours)<br />
+          University of Limerick, Ireland — 2018–2019<br />
+          Awards: Letter of Congratulations (July 2019), 3rd Place – Cinco Adventure Game (2018)</p>
 
-<p><strong>Languages</strong><br />
-English (Native), German</p>
+        <p><strong>Bachelor of Arts (Music)</strong> (2nd Class Honours)<br />
+          University College Cork, Ireland — 2012–2015</p>
 
-<h2 id="education">Education</h2>
+        <p><strong>Piano Performance Diploma</strong><br />
+          University of West London, UK — 2011–2012</p>
 
-<p><strong>Postgraduate Diploma in Software Development</strong> (1st Class Honours)<br />
-University of Limerick, Ireland — 2018–2019<br />
-Awards: Letter of Congratulations (July 2019), 3rd Place – Cinco Adventure Game (2018)</p>
+        <p><strong>Teaching Knowledge Test (TKT1)</strong><br />
+          Cambridge University</p>
 
-<p><strong>Bachelor of Arts (Music)</strong> (2nd Class Honours)<br />
-University College Cork, Ireland — 2012–2015</p>
+        <h2 id="projects">Projects</h2>
 
-<p><strong>Piano Performance Diploma</strong><br />
-University of West London, UK — 2011–2012</p>
+        <h3 id="festivalgrade--festival-rating-website">FestivalGrade – Festival Rating Website</h3>
+        <p><strong>Angular + PostgreSQL</strong> | March 2025 – May 2025</p>
 
-<p><strong>Teaching Knowledge Test (TKT1)</strong><br />
-Cambridge University</p>
+        <p>Fullstack festival rating platform with user reviews, Keycloak authentication, and content management
+          features. Deployed on Hetzner VPS.</p>
 
-<h2 id="projects">Projects</h2>
+        <h3 id="ai-detector--open-source-ai-email-detector">AI Detector – Open Source AI Email Detector</h3>
+        <p><strong>Rust</strong> | May 2025 – June 2025</p>
 
-<h3 id="festivalgrade--festival-rating-website">FestivalGrade – Festival Rating Website</h3>
-<p><strong>Angular + PostgreSQL</strong> | March 2025 – May 2025</p>
+        <p>Open-source email classification tool featuring a KNN detection engine, REST API backend, and Rust Hypertext
+          server-side frontend. Containerized with Docker and deployed on Hetzner Linux infrastructure.</p>
 
-<p>Fullstack festival rating platform with user reviews, Keycloak authentication, and content management features. Deployed on Hetzner VPS.</p>
+        <h3 id="technical-content-creation">Technical Content Creation</h3>
+        <p><strong>YouTube – @shanemoloney</strong> | May 2021 – June 2026</p>
 
-<h3 id="ai-detector--open-source-ai-email-detector">AI Detector – Open Source AI Email Detector</h3>
-<p><strong>Rust</strong> | May 2025 – June 2025</p>
+        <p>Created coding tutorials and technical guides on modern technologies with 10,000+ views. Hosted live events
+          with renowned developers such as Herbert Wolverson.</p>
 
-<p>Open-source email classification tool featuring a KNN detection engine, REST API backend, and Rust Hypertext server-side frontend. Containerized with Docker and deployed on Hetzner Linux infrastructure.</p>
+        <h3 id="tommywhelancom-website">TommyWhelan.com Website</h3>
+        <p><strong>Freelance</strong> | January 2025 – March 2025</p>
 
-<h3 id="technical-content-creation">Technical Content Creation</h3>
-<p><strong>YouTube – @shanemoloney</strong> | May 2021 – June 2026</p>
+        <p>Responsive website deployed with Cloudflare hosting. Digitisation and publishing of archival audio content
+          for public access.</p>
 
-<p>Created coding tutorials and technical guides on modern technologies with 10,000+ views. Hosted live events with renowned developers such as Herbert Wolverson.</p>
+        <hr />
 
-<h3 id="tommywhelancom-website">TommyWhelan.com Website</h3>
-<p><strong>Freelance</strong> | January 2025 – March 2025</p>
 
-<p>Responsive website deployed with Cloudflare hosting. Digitisation and publishing of archival audio content for public access.</p>
-
-<hr />
-
-<p><strong>Quick links:</strong> <a href="/">Home</a>, <a href="/portfolio/">Portfolio</a></p>
-
+      </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var links = document.querySelectorAll('#sidebar nav a');
+      var path = window.location.pathname.replace(/\/$/, '') || '/';
+
+      links.forEach(function (link) {
+        var href = link.getAttribute('href').replace(/\/$/, '') || '/';
+        if (href === path) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
