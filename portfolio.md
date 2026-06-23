@@ -8,54 +8,36 @@ permalink: /portfolio/
 
 ---
 
-## Projects
+
+## FestivalGrade – Festival Rating Website
+**Festival rating platform with user reviews**
+
+<a href="https://festivalgrade.com/" target="_blank">
+  ![FestivalGrade](../assets/images/festivalgrade_screenshot.png){:class="img-fit"}
+</a>
 
 
-### FestivalGrade – Festival Rating Website
-**Angular + PostgreSQL** | March 2025 – May 2025
 
-Full-stack festival rating platform with user reviews, Keycloak authentication, and content management features.
+## AI Detector
+**Open-source email classification tool using machine learning techniques**
 
-- Angular frontend with PostgreSQL backend  
-- Secure authentication using Keycloak  
-- Content management for festivals and reviews  
-- Deployed on Hetzner VPS  
-
---- ✦ ---
+<a href="https://detectai.dev/" target="_blank">
+  ![DetectAI](../assets/images/ai_detector_screenshot.png){:class="img-fit"}
+</a>
 
 
-### AI Detector – Open Source AI Email Detector
-**Rust** | May 2025 – June 2025
+## Coding Content
+**Coding tutorials and technical guides with 10,000+ views**.
 
-Open-source email classification tool using machine learning techniques.
+<a href="https://www.youtube.com/@shanemoloney" target="_blank">
+  ![YoutubeChannel](../assets/images/youtube_channel.png){:class="img-fit"}
+</a>
 
-- KNN detection engine implemented in Rust  
-- REST API backend  
-- Server-side frontend built with Rust Hypertext  
-- Containerized with Docker  
-- Deployed on Hetzner Linux infrastructure  
 
---- ✦ ---
+## TommyWhelan.com Website
+**Archival Irish Music**
 
-### Technical Content Creation
-**YouTube – @shanemoloney** | May 2021 – June 2026
-
-Created coding tutorials and technical guides on modern technologies with **10,000+ views**.
-
-Hosted live events with renowned developers such as Herbert Wolverson.
-
-- Rust, systems programming, and backend development  
-- Practical tutorials and deep technical guides  
-- Live coding sessions and community events  
-
---- ✦ ---
-
-### TommyWhelan.com Website
-**Freelance** | January 2025 – March 2025
-
-Responsive website for archival audio content.
-
-- Deployed with Cloudflare hosting  
-- Digitisation and publishing of archival audio content for public access  
-- Fully responsive design  
+<a href="https://tommywhelan.com/" target="_blank">
+  ![TommyWhelan](../assets/images/tommywhelan.png){:class="img-fit"}
+</a>
 

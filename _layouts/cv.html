@@ -8,6 +8,23 @@
   <link href="../media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="../media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
   <style>
+    .img-fit {
+      max-width: 50%;
+      height: 30%;
+      display: block;
+      margin: auto 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .img-fit:hover {
+      transform: scale(1.015);
+      /* subtle zoom in */
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    }
+
     #page {
       display: flex;
       min-height: 100vh;
