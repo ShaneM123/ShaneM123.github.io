@@ -16,6 +16,17 @@ title: CV - Shane Moloney
 
 ## Experience
 
+
+### Full Stack Developer
+**Peeriot** · Full-time  
+Aug 2026 – Present · Germany
+
+- Created real-time Rust based demos of the solution to showcase the product and explore new use cases.
+- Launched the open source codebase at RustConf, presenting live demos and speaking directly with many developers and potential users, directly resulting in 75 GitHub stars on launch day.
+- Hosting product talks for Rust user groups, sharing technical insights and demonstrating the product to the community.
+
+--- ✦ ---
+
 ### Full Stack Developer
 **Rhebo** · Full-time  
 Oct 2021 – Jan 2025 · 3 yrs 4 mos · Germany
